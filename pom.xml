@@ -3,6 +3,10 @@
   <groupId>com.maven</groupId>
   <artifactId>MyMavenApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+	<properties>
+  <sonar.organization>prajwalyb</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
   <build>
 		<plugins>
 			<plugin>
