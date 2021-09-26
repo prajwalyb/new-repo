@@ -18,6 +18,7 @@ pipeline {
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
+        }
              stage('SonarQube analysis') {
                  steps{
     def scannerHome = tool 'SonarScanner 4.0';
