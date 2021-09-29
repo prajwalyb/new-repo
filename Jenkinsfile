@@ -1,3 +1,7 @@
+
+//checking changes 13
+
+
 pipeline {
     agent any
 
@@ -27,6 +31,7 @@ pipeline {
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
+
              stage('SonarQube analysis') {
                  steps{
     withSonarQubeEnv(installationName: 'SonarCloud') { // You can override the credential to be used
@@ -53,6 +58,7 @@ pipeline {
                 }
             }
         }
+
 
         }
     }
