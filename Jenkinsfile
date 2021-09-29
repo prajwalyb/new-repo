@@ -36,6 +36,9 @@ pipeline {
   }
         stage('Deploy')
         {
+            when{
+            branch 'develop'
+            }
             steps{
                 script{
                     docker.withRegistry(
