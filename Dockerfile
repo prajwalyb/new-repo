@@ -1,4 +1,5 @@
 FROM openjdk:11
-WORKDIR src/main/java/javaApp
 EXPOSE 8080
-ENTRYPOINT ["java","src/main/java/javaApp/Test.java"]
+ADD target/MyMavenApp-0.0.1-SNAPSHOT.jar MyMavenApp-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/MyMavenApp-0.0.1-SNAPSHOT.jar"]
+
