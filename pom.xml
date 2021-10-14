@@ -4,8 +4,10 @@
   <artifactId>MyMavenApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 	<properties>
-  <sonar.organization>prajwalyb</sonar.organization>
+  <properties>
+  <sonar.organization>anurajbhandari5</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
 </properties>
   <build>
 		<plugins>
